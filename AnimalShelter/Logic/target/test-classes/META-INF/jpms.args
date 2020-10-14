@@ -1,0 +1,4 @@
+--patch-module
+Logic=_
+--add-reads
+Logic=ALL-UNNAMED

@@ -1,0 +1,10 @@
+org\fhict\logic\Gender.class
+org\fhict\logic\Webshop.class
+module-info.class
+org\fhict\logic\Animal.class
+org\fhict\logic\Sellable.class
+org\fhict\logic\Cat.class
+org\fhict\logic\Dog.class
+org\fhict\logic\Reservation.class
+org\fhict\logic\Product.class
+org\fhict\logic\Reservor.class

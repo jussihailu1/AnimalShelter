@@ -3,10 +3,26 @@ package org.fhict.logic;
 import java.util.ArrayList;
 
 public class Webshop {
-    public ArrayList<Product> productsForSale = new ArrayList<>();
-    public ArrayList<Animal> animalsForSale = new ArrayList<>();
-    public ArrayList shoppingCartItems = new ArrayList();
-    public int totalPrice = 0;
+    private ArrayList<Product> productsForSale = new ArrayList<>();
+    private ArrayList<Animal> animalsForSale = new ArrayList<>();
+    private ArrayList<Sellable> shoppingCartItems = new ArrayList<Sellable>();
+    private int totalPrice = 0;
+
+    public ArrayList<Product> getProductsForSale() {
+        return productsForSale;
+    }
+
+    public ArrayList<Animal> getAnimalsForSale() {
+        return animalsForSale;
+    }
+
+    public ArrayList<Sellable> getShoppingCartItems() {
+        return shoppingCartItems;
+    }
+
+    public int getTotalPrice() {
+        return totalPrice;
+    }
 
     public Webshop() {
         animalsForSale.addAll(Reservation.animals);

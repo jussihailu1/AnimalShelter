@@ -39,32 +39,32 @@ public class SecondaryController {
 
     public void updateView() {
         lvProducts.getItems().clear();
-        for (Product p : webshop.productsForSale) {
+        for (Product p : webshop.getProductsForSale()) {
             lvProducts.getItems().add(p.toString());
         }
 
         lvAnimals.getItems().clear();
-        for (Animal a : webshop.animalsForSale) {
+        for (Animal a : webshop.getAnimalsForSale()) {
             lvAnimals.getItems().add(a);
         }
 
         lvShoppingCart.getItems().clear();
-        for (Object item : webshop.shoppingCartItems) {
+        for (Object item : webshop.getShoppingCartItems()) {
             lvShoppingCart.getItems().add(item);
         }
 
-        lbTotalPrice.setText("€ " + String.valueOf(webshop.totalPrice));
+        lbTotalPrice.setText("€ " + String.valueOf(webshop.getTotalPrice()));
     }
 
     public void addProduct() {
         int price = Integer.parseInt(tfPrice.getText());
-        webshop.productsForSale.add(new Product(tfName.getText(), price));
+        webshop.getProductsForSale().add(new Product(tfName.getText(), price));
         updateView();
     }
 
     public void addAnimaltoShoppingCart() {
         Animal animal = null;
-        for (Animal a : webshop.animalsForSale) {
+        for (Animal a : webshop.getAnimalsForSale()) {
             if (a.equals(lvAnimals.getFocusModel().getFocusedItem())) {
                 animal = a;
             }
@@ -76,7 +76,7 @@ public class SecondaryController {
 
     public void addProductToShoppingCart() {
         Product product = null;
-        for (Product p : webshop.productsForSale) {
+        for (Product p : webshop.getProductsForSale()) {
             if (p.toString().equals(lvProducts.getFocusModel().getFocusedItem())) {
                 product = p;
             }
