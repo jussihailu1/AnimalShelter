@@ -1,6 +1,0 @@
-# Created at 2020-10-14T18:14:09.550
-Error: Could not find or load main class Application\AnimalShelter\Logic\target\classes
-
-# Created at 2020-10-14T18:14:09.550
-Caused by: java.lang.ClassNotFoundException: Application\AnimalShelter\Logic\target\classes
-

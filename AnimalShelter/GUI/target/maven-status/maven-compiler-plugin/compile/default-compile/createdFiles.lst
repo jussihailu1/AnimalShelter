@@ -1,0 +1,4 @@
+org\fhict\gui\PrimaryController.class
+module-info.class
+org\fhict\gui\App.class
+org\fhict\gui\SecondaryController.class
